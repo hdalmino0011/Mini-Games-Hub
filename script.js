@@ -31,7 +31,7 @@ function buildReactionGame() {
             <div>click the moving star</div>
         </div>
         <div id="reactionArena" class="reaction-arena" style="height: 360px;"></div>
-        <button id="resetReaction" class="game-btn" style="background:#3a2a1a;">reset game</button>
+        <button id="resetReaction" class="game-btn" style="background:#ffaa66;">reset game</button>
     `;
     const arena = container.querySelector('#reactionArena');
     reactionArena = arena;
@@ -110,7 +110,7 @@ let memoryButtons = [];
 let memoryActive = false;
 
 function buildMemoryGame() {
-    const colors = ['#E35F5F', '#5F9E6E', '#5F8BE3', '#E3B15F'];
+    const colors = ['#FF6B6B', '#4CAF7A', '#5D9BEC', '#FFB347'];
     const container = document.createElement('div');
     container.className = 'game-area';
     container.innerHTML = `
@@ -206,7 +206,7 @@ function buildTimingGame() {
         <div class="meter-box">
             <div class="meter-bar"><div id="meterFill" class="meter-fill"></div></div>
             <button id="stopMeterBtn" class="stop-btn">stop meter</button>
-            <button id="resetTiming" class="game-btn" style="background:#2f2a3a;">new round</button>
+            <button id="resetTiming" class="game-btn" style="background:#ffcc88;">new round</button>
         </div>
     `;
     const fillDiv = container.querySelector('#meterFill');
